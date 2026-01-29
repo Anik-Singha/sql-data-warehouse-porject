@@ -1,66 +1,83 @@
-# Data Warehouse and Analytics Project 🚀
+# 📊 Data Warehouse and Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository! This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+![SQL](https://img.shields.io/badge/SQL-Server-blue)
+![Data Warehouse](https://img.shields.io/badge/Data-Warehouse-green)
+![ETL](https://img.shields.io/badge/ETL-Pipelines-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+A complete **end-to-end Data Warehouse & Analytics project** built using **SQL Server** following industry best practices.  
+This project demonstrates **data engineering, ETL development, data modeling, and analytical reporting**, making it ideal for portfolio and job applications.
+
+---
+
+## 📌 Project Overview
+
+This project implements a **modern data warehouse** using the **Medallion Architecture (Bronze → Silver → Gold)** to transform raw business data into analytics-ready datasets.
+
+### Key Objectives:
+- Design a scalable data warehouse
+- Build ETL pipelines using SQL
+- Apply dimensional data modeling
+- Generate business-ready analytical datasets
+- Follow professional project structure and documentation
 
 ---
 
 ## 🏗️ Data Architecture
 
-The data architecture for this project follows the **Medallion Architecture** (Bronze, Silver, and Gold layers):
+### 🥉 Bronze Layer
+- Stores raw data from source systems
+- Data ingested from CSV files
+- No transformations applied
 
-* **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV Files into a SQL Server Database.
-* **Silver Layer:** This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-* **Gold Layer:** Houses business-ready data modeled into a **Star Schema** required for reporting and analytics.
+### 🥈 Silver Layer
+- Data cleaning and standardization
+- Handling nulls, duplicates, and data types
+- Data quality enforcement
 
----
-
-## 📖 Project Overview
-
-This project covers the end-to-end lifecycle of data engineering:
-
-1.  **Data Architecture:** Designing a Modern Data Warehouse using Medallion Architecture.
-2.  **ETL Pipelines:** Extracting, transforming, and loading data from source systems (ERP/CRM).
-3.  **Data Modeling:** Developing Fact and Dimension tables optimized for analytical queries.
-4.  **Analytics & Reporting:** Creating SQL-based reports and dashboards for actionable insights.
-
-> [!TIP]
-> This repository is an excellent resource for showcasing expertise in **SQL Development, Data Engineering, ETL Pipeline Development, and Data Modeling.**
+### 🥇 Gold Layer
+- Business-ready data
+- Star schema modeling
+- Optimized for analytics and reporting
 
 ---
 
-## 🛠️ Tools & Resources
+## 🎯 Skills Demonstrated
 
-Everything used in this project is **Free**:
-
-| Tool | Purpose |
-| :--- | :--- |
-| **SQL Server Express** | Lightweight server for hosting the database |
-| **SSMS** | GUI for managing and interacting with SQL |
-| **Git/GitHub** | Version control and collaboration |
-| **Draw.io** | Designing data architecture and star schemas |
-| **Notion** | Project management and task tracking |
-
-* **Datasets:** [Link to CSV Files](#)
-* **Project Template:** [Notion Link](#)
+- SQL Development  
+- Data Warehousing  
+- ETL Pipeline Design  
+- Data Modeling (Star Schema)  
+- Data Cleaning & Validation  
+- Analytical Query Writing  
+- Repository & Documentation Best Practices  
 
 ---
 
 ## 🚀 Project Requirements
 
-### 1. Building the Data Warehouse (Data Engineering)
-**Objective:** Develop a modern data warehouse using SQL Server to consolidate sales data.
-* **Data Sources:** Import data from ERP and CRM systems.
-* **Data Quality:** Cleanse and resolve data quality issues (Silver Layer).
-* **Integration:** Combine sources into a single, user-friendly Star Schema (Gold Layer).
-* **Documentation:** Provide a clear data model for stakeholders.
+### 1️⃣ Data Engineering
+**Objective:**  
+Build a modern data warehouse using SQL Server.
 
+**Key Tasks:**
+- Import ERP & CRM datasets  
+- Clean and standardize data  
+- Integrate data into a unified model  
+- Design fact and dimension tables  
+- Maintain clear documentation  
 
+---
 
-### 2. BI & Analytics (Data Analysis)
-**Objective:** Develop SQL-based analytics to deliver insights into:
-* **Customer Behavior** (Segmentation, Lifetime Value)
-* **Product Performance** (Top sellers, Category trends)
-* **Sales Trends** (MoM Growth, Seasonal patterns)
+### 2️⃣ BI & Analytics
+**Objective:**  
+Generate insights using SQL queries.
+
+**Analysis Includes:**
+- Customer behavior analysis  
+- Product performance evaluation  
+- Sales trend analysis (MoM, seasonal trends)  
 
 ---
 
@@ -68,12 +85,82 @@ Everything used in this project is **Free**:
 
 ```text
 data-warehouse-project/
-├── datasets/               # Raw datasets (ERP and CRM data)
-├── docs/                   # Architecture, Data Flow, and Data Models
-├── scripts/                # SQL scripts for ETL
-│   ├── bronze/             # Raw data loading
-│   ├── silver/             # Cleaning and transformation
-│   ├── gold/               # Analytical modeling (Fact/Dim)
-├── tests/                  # Data quality check scripts
-└── README.md               # Project overview
+│
+├── datasets/                           # Raw CSV files (ERP & CRM)
+│
+├── docs/                               # Documentation & diagrams
+│   ├── etl.drawio
+│   ├── data_architecture.drawio
+│   ├── data_catalog.md
+│   ├── data_flow.drawio
+│   ├── data_models.drawio
+│   ├── naming-conventions.md
+│
+├── scripts/                            # SQL scripts
+│   ├── bronze/                         # Raw data ingestion
+│   ├── silver/                         # Data transformation
+│   ├── gold/                           # Analytics layer
+│
+├── tests/                              # Data quality checks
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+└── requirements.txt
+
 ```
+## 🧠 Key Learnings
+
+- Designing scalable data warehouse architecture  
+- Building ETL pipelines using SQL  
+- Applying dimensional modeling techniques  
+- Creating analytics-ready datasets  
+- Writing optimized SQL queries  
+- Structuring real-world data projects  
+
+---
+
+## 📊 Analytics Use Cases
+
+- 📈 Sales performance over time  
+- 👥 Customer purchasing behavior  
+- 🛒 Product performance analysis  
+- 🌍 Regional sales insights  
+
+These insights support **data-driven business decisions**.
+
+---
+
+## 🧪 Testing & Data Quality
+
+Implemented quality checks include:
+
+- Null value detection  
+- Duplicate record checks  
+- Data type validation  
+- Referential integrity checks  
+- Row count reconciliation  
+
+All validation scripts are located in the `tests/` directory.
+
+---
+
+## 🛡️ License
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute it with attribution.
+
+---
+
+## 👤 About the Author
+
+**Anik Singha**  
+🎓 CSE Graduate | Aspiring Data Engineer  
+
+Passionate about:
+- Data Engineering  
+- SQL & Analytics  
+- Building real-world data projects  
+
+📌 Feel free to connect and explore more projects!
+
