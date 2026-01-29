@@ -41,6 +41,8 @@ This project implements a **modern data warehouse** using the **Medallion Archit
 - Star schema modeling
 - Optimized for analytics and reporting
 
+“In MySQL, Bronze, Silver, and Gold layers are implemented as separate databases since MySQL treats databases as schemas.” 
+
 ---
 
 ## 🎯 Skills Demonstrated
