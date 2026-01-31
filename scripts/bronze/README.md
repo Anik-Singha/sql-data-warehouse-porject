@@ -1,7 +1,7 @@
 # 🥉 Bronze Layer Scripts
 
 ## Purpose
-Load raw data from CSV files into the Bronze database.
+Load raw data from CSV files into the Bronze schema.
 
 ## Input
 - ERP source data
