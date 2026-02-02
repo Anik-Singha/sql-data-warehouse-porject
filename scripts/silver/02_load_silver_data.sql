@@ -172,3 +172,21 @@ select
          else 'n/a'
     end as gen  -- Normalize gender values and handle unknown cases
 from bronze.erp_cust_az12
+
+
+----------------------------------------
+insert into silver.erp_loc_a101(
+    cid,
+    cntry
+)
+select 
+    replace(cid,'-','') cid,
+    case when UPPER(trim(cntry)) in ('DE','GERMANY') then 'Germany'
+         when UPPER(trim(cntry)) in ('US','USA','UNITED STATES') then 'United States'
+         when trim(cntry) = '' or cntry is null then 'n/a'
+        else trim(cntry)
+    end cntry   -- Normalize and Handle missing or blank country codes
+from bronze.erp_loc_a101
+
+
+----------------------------------------
