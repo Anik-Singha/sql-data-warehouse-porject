@@ -93,7 +93,7 @@ AS
             SELECT
                 prd_id                                                          ,
                 REPLACE(substring(prd_key,1,5), '-', '_')            AS cat_id  ,   -- Extract category ID
-                REPLACE(substring(prd_key,7,LEN(prd_key)), '-', '_') AS prd_key ,   -- Extract product key
+                substring(prd_key,7,LEN(prd_key)) AS prd_key                    ,   -- Extract product key
                 prd_nm                                                          ,
                 ISNULL(prd_cost,0)                                   AS prd_cost,
                 CASE
