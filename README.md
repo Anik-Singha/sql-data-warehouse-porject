@@ -41,8 +41,6 @@ This project implements a **modern data warehouse** using the **Medallion Archit
 - Star schema modeling
 - Optimized for analytics and reporting
 
-**In MySQL, Bronze, Silver, and Gold layers are implemented as separate databases since MySQL treats databases as schemas.**
-
 ---
 
 ## 🎯 Skills Demonstrated
@@ -91,14 +89,14 @@ data-warehouse-project/
 ├── datasets/                           # Raw CSV files (ERP & CRM)
 │
 ├── docs/                               # Documentation & diagrams
-│   ├── etl.drawio
-│   ├── data_architecture.drawio
+│   ├── data_architecture.png
 │   ├── data_catalog.md
-│   ├── data_flow.drawio
-│   ├── data_models.drawio
+│   ├── data_integration.png
+│   ├── data_model.png
 │   ├── naming-conventions.md
 │
 ├── scripts/                            # SQL scripts
+│   ├── setup/                          # Creating Database and Schemas
 │   ├── bronze/                         # Raw data ingestion
 │   ├── silver/                         # Data transformation
 │   ├── gold/                           # Analytics layer
@@ -107,8 +105,6 @@ data-warehouse-project/
 │
 ├── README.md
 ├── LICENSE
-├── .gitignore
-└── requirements.txt
 
 ```
 ## 🧠 Key Learnings
