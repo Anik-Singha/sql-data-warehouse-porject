@@ -1,4 +1,4 @@
-# 📊 Data Warehouse and Analytics Project
+# 📊 Data Warehouse Project
 
 ![SQL](https://img.shields.io/badge/SQL-Server-blue)
 ![Data Warehouse](https://img.shields.io/badge/Data-Warehouse-green)
